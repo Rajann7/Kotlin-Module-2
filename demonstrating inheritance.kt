@@ -19,8 +19,8 @@ class Cat : Animal() {
 }
 
 fun main() {
-    val dog = Dog()
-    val cat = Cat()
+    var dog = Dog()
+    var cat = Cat()
 
     dog.makeSound()
     cat.makeSound()
