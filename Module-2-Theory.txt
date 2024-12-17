@@ -1,0 +1,71 @@
+Module 2: Kotlin Programming Basics
+
+
+• Theory Assignment:
+
+
+1. Explain the different data types available in Kotlin. How do val and var differ?
+
+-->  int, float, char, Boolean, string and Arrays are datatype.
+
+	var are Mutable reference like user can change var value
+	Ex. var y = 20  // Mutable y = 30
+
+	val are immutable reference. user can not change val value
+	Ex. val x = 10  // Immutable
+
+
+2.What is a lambda expression in Kotlin, and where can it be used?
+
+-->	A lambda expression is a concise, unnamed function enclosed in braces, used for defining code blocks that can be passed as values or stored as variables.
+	It can be assigned to a variable or passed as a parameter.
+
+	arguments for higher-order functions Used.
+
+
+Object-Oriented Programming in Kotlin
+
+• Theory Assignment:
+
+1.Describe the principles of Object-Oriented Programming (OOP). E
+
+-->	The four main principles of OOP are:  
+
+	1. Encapsulation: Bundling data and methods into a class and controlling access using private or protected modifiers.  
+	2. Abstraction: Hiding complex details and showing only what’s necessary, using abstract classes or interfaces.  
+	3. Inheritance: Allowing one class to inherit properties and behaviors from another.  
+	4. Polymorphism: Using methods in different forms, like overriding or overloading them.  
+
+
+2. Explain the differences between abstract class and interface in Kotlin and provide examples of when to use them.
+
+-->	Abstract Class: Used when you want to share common behavior among classes. A class can inherit only one abstract class.  
+	Interface: Used for defining multiple behaviors without implementation. A class can implement multiple interfaces.  
+
+Example:  
+		abstract class  
+		
+abstract class Shape {
+    abstract fun area(): Int
+}
+
+class Circle(val radius: Int) : Shape() {
+    override fun area() = (3.14 * radius * radius).toInt()
+}
+
+
+
+		interface 
+
+interface Drawable {
+    fun draw()
+}
+
+class Square : Drawable {
+    override fun draw() {
+        println("Drawing Square")
+    }
+}
+
+
+
